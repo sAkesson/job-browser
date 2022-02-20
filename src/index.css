@@ -1,0 +1,25 @@
+:root {
+  --card-width: 700px;
+  --card-height: 250px;
+  --backgroud: #bdc2b5;
+  --card-background: #f9f6f7;
+  --button-background: #52625d;
+  --text-color: #31352e;
+  --subtitle-color: #414644;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, sBlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  background-color: var(--backgroud);
+  color: var(--text-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

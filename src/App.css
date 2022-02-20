@@ -1,0 +1,12 @@
+.container {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 724px) {
+  .container {
+    margin: 12px 0;
+  }
+}
