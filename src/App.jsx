@@ -3,23 +3,23 @@ import ListItem from './components/ListItem/ListItem.jsx';
 import './App.css';
 
 const App = () => {
-  const [postings, setPostings] = useState([]);
+  const [jobAds, setJobAdds] = useState([]);
 
-  const getAllJobs = async () => {
+  const getAllJobAds = async () => {
     return fetch('https://feed.jobylon.com/feeds/7d7e6fd12c614aa5af3624b06f7a74b8/?format=json')
       .then((response) => response.json())
       .catch((error) => console.warn(error));
   };
 
   useEffect(async () => {
-    const data = await getAllJobs();
+    const data = await getAllJobAds();
 
-    setPostings(data);
+    setJobAdds(data);
   }, []);
 
   return (
     <div className="container">
-      {postings.map((post) => {
+      {jobAds.map((post) => {
         const {
           id,
           title,
