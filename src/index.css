@@ -1,8 +1,7 @@
 :root {
-  --card-width: 700px;
-  --card-height: 250px;
+  --list-item-width: 700px;
   --backgroud: #bdc2b5;
-  --card-background: #f9f6f7;
+  --list-item-background: #f9f6f7;
   --button-background: #52625d;
   --text-color: #31352e;
   --subtitle-color: #414644;

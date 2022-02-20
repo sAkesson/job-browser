@@ -42,10 +42,7 @@ const App = () => {
             metadata={`${jobFunction}, ${experience}`}
             body={descr}
             tags={tags}
-            action={(event) => {
-              event.preventDefault();
-              window.open(urls.ad, '_blank');
-            }}
+            action={() => window.open(urls.ad, '_blank')}
           />
         );
       })}

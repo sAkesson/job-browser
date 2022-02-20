@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.css';
 
-const Button = ({ handleClick, text }) => {
+const Button = ({ handleClick, label }) => {
   return (
     <button type="button" onClick={handleClick}>
-      {text}
+      {label}
     </button>
   );
 };
@@ -14,5 +14,5 @@ export default Button;
 
 Button.propTypes = {
   handleClick: PropTypes.func,
-  text: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 };
