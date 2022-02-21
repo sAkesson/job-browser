@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <div className="container">
-      {!errorMessage.length &&
+      {!errorMessage &&
         !loading &&
         jobAds.map((post) => {
           const {

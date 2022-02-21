@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Tag.css';
 
-const Tag = ({ children }) => {
-  return <div className="tag">{children}</div>;
+const Tag = ({ text }) => {
+  return <div className="tag">{text}</div>;
 };
 
 export default Tag;
 
 Tag.propTypes = {
-  children: PropTypes.node.isRequired,
+  text: PropTypes.string.isRequired,
 };

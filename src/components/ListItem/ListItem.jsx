@@ -19,7 +19,7 @@ const ListItem = ({ title, subTitle, body, tags, action }) => {
       {(tags || action) && (
         <div className="list-item-footer">
           <div className="list-item-footer-tag-container">
-            {tags && tags.map((tag) => <Tag key={tag}>{tag}</Tag>)}
+            {tags && tags.map((tag) => <Tag key={tag} text={tag} />)}
           </div>
           {action && <Button label="Read more" />}
         </div>
